@@ -24,6 +24,7 @@ use App\Core\Auth;
             <span class="input-with-icon">
                 <?= icon('user') ?>
                 <input
+                    class="input"
                     type="text"
                     name="usuario"
                     value="<?= e($old['usuario'] ?? '') ?>"
@@ -40,6 +41,7 @@ use App\Core\Auth;
             <span class="input-with-icon">
                 <?= icon('lock') ?>
                 <input
+                    class="input"
                     type="password"
                     name="password"
                     autocomplete="current-password"
