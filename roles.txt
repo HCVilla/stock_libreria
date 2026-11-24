@@ -1,0 +1,8 @@
+Usuarios de prueba
+Usuario		Contraseña	Rol		Permisos
+admin		Admin123!	admin		Acceso total: usuarios, catálogo, importación, movimientos y reportes
+encargado	Encargado123!	encargado	Catálogo, importación CSV y registro de movimientos
+vendedor	Vendedor123!	vendedor	Consulta de catálogo, movimientos, reposición y reportes; no registra movimientos
+consulta	Consulta123!	consulta	Solo lectura de catálogo, movimientos, reposición y reportes
+
+Cualquier usuario autenticado puede cambiar su propia contraseña en /cuenta/password.

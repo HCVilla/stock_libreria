@@ -1,0 +1,41 @@
+# --- Entorno y secretos ---
+.env
+.env.*
+!.env.example
+
+# --- Dependencias y artefactos de build ---
+/vendor/
+node_modules/
+__pycache__/
+.venv/
+venv/
+build/
+dist/
+out/
+coverage/
+*.cache
+*.pid
+
+# --- Almacenamiento local de la app ---
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/backups/*
+!/storage/backups/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.sqlite
+*.sqlite3
+*.db
+
+# --- IDE / sistema operativo ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,14 @@
+Options -Indexes
+
+# Defensa en profundidad: si por error Apache sirve la raíz del proyecto,
+# bloquea archivos sensibles y carpetas internas.
+<IfModule mod_authz_core.c>
+    <FilesMatch "(^\.|\.env$|composer\.(json|lock)$)">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(src|config|database|storage|bin|docs|resources)(/|$) - [F,L]
+</IfModule>
